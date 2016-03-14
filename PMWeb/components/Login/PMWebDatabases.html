@@ -1,0 +1,18 @@
+ <div data-role="view" data-title="PMWeb Databases" data-layout="mainWHeader" id="PMWebDatabases" data-reload="true" 
+      data-show="app.PMWebDatabases.onShow" data-after-show="app.PMWebDatabases.afterShow" 
+      data-before-show="app.PMWebDatabases.beforeShow" id="PMWebDatabases" data-model="app.PMWebDatabases">
+     <header data-role="header">
+            <div data-role="navbar" style="background-color:#8ebc00">
+                <a class="nav-button" data-align="left" data-role="backbutton" data-icon="arrow-e" style="color:#ffffff;background:#8ebc00"></a>
+                <span data-role="view-title" style="color:#ffffff"></span>
+            </div>
+        </header>
+     
+     <script type="text/x-kendo-template" id="Databases-template">
+        #: DatabaseName #
+        </script>
+     <ul data-role="listview" id="lstDatabases" data-template="Databases-template" data-click="lstDatabases_Click">
+  </ul>
+    
+</div> 
+

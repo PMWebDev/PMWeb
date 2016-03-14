@@ -1,0 +1,16 @@
+<div data-role="view" data-title="ProjectsList" data-layout="main" data-model="app.ProjectsList" 
+   data-init="app.ProjectsList.onInit"  data-show="app.ProjectsList.onShow" data-after-show="app.ProjectsList.afterShow" data-before-show="app.ProjectsList.beforeShow">
+   <header data-role="header">
+            <div data-role="navbar" style="background-color:#8ebc00">
+                <a class="nav-button" data-align="left" data-role="backbutton" data-icon="arrow-e" style="color:#ffffff;background:#8ebc00"></a>
+                <span data-role="view-title" style="color:#ffffff"></span>
+            </div>
+        </header>
+    
+     <script type="text/x-kendo-template" id="ProjectsList-template">
+        #: DatabaseName #
+        </script>
+     <ul data-role="listview" id="lstProjectsList" data-template="ProjectsList-template" data-click="ProjectsList_Click">
+         
+     
+</div>

@@ -1,0 +1,38 @@
+<div data-role="view" data-title="Connect to PMWeb" data-layout="mainWHeader" data-model="app.Login" id="Prelogin"  
+    data-show="app.Prelogin.onShow" data-after-show="app.Prelogin.afterShow"  data-init="app.Prelogin.onInit" data-reload="true">
+    
+    <header data-role="header">
+            <div data-role="navbar" style="background-color:#8ebc00">
+                <a class="nav-button" data-align="left" data-role="backbutton" data-icon="arrow-e" style="color:#ffffff;background:#8ebc00"></a>
+                <span data-role="view-title" style="color:#ffffff"></span>
+            </div>
+        </header>
+    
+    <form id="frmConnect">
+    <table>
+        <tr>
+        	<td> Please enter PMWeb Web Application URL.
+	   All your PMWeb phone settings, local data and offline files will be delete!</td>
+        </tr>
+        <tr>
+        	<td style="height:10%">
+            </td>
+        </tr>
+        <tr>
+        	<td style="text-align:center"><input type="url" name="txtPMWebUrl" id="txtPMWebUrl" style="width:90%" 
+                                                 class="k-textbox" required data-required-msg="You need to enter a URL" 
+                                                 data-url-msg="This url is invalid"
+                                                 placeholder="e.g. http://pmweb.mycompany.com/pmweb"/>
+            </td>
+        </tr>
+        <tr>
+        	<td style="height:10%"></td>
+        </tr>
+        <tr>
+        	<td style="text-align:center">
+				<a data-role="button" style="width:60%" id="hplConnect" data-click="hplConnect_Click">Connect</a>
+            </td>
+        </tr>
+    </table>
+   </form>
+</div> 

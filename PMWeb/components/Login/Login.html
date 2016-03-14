@@ -1,0 +1,61 @@
+
+<div data-role="view" data-title="Login to PMWeb" data-layout="mainWHeader" data-model="app.Login" id="Login" 
+    data-show="app.Login.onShow" data-after-show="app.Login.afterShow" data-reload="true">
+    <header data-role="header">
+            <div data-role="navbar" style="background-color:#8ebc00">
+                <a class="nav-button" data-align="left" data-role="backbutton" data-icon="arrow-e" style="color:#ffffff;background:#8ebc00"></a>
+                <span data-role="view-title" style="color:#ffffff"></span>
+            </div>
+        </header>
+    
+    <div style="width:100%; align:center">
+        
+   
+     <table style="width:60%;margin:auto">
+        <tr>
+        	<td style="height:3em">
+            </td>
+        </tr>
+        <tr>
+        	<td>Username</td>
+        </tr>
+        <tr>
+        	<td ><input type="text" name="txtUsername" id="txtUsername" style="width:100%" 
+                                                 class="k-textbox"/>
+            </td>
+        </tr>
+        <tr>
+        	<td style="height:3em">
+            </td>
+        </tr>
+          <tr>
+        	<td>Password</td>
+        </tr>
+        <tr>
+        	<td ><input type="password" name="txtPassword" id="txtPassword" style="width:100%" 
+                                                 class="k-textbox"/>
+            </td>
+        </tr>
+        <tr>
+        	<td style="height:3em">
+        </tr>
+         <tr>
+        	<td valign="middle"><div style="float:left; margin-top:5px">Remember me
+                
+                </div><div style="float:right"><input type="checkbox" data-role="switch" id="chkRememberMe"  />
+                
+                </div> 
+            </td>
+        </tr>
+        <tr>
+        	<td style="height:3em">
+        </tr>
+        <tr>
+        	<td style="text-align:center">
+				<a data-role="button" style="width:70%" id="hplLogin" data-click="hplLogin_Click">Login</a>
+            </td>
+        </tr>
+    </table> 
+    
+     </div>
+</div> 

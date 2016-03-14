@@ -1,6 +1,6 @@
 {
   "ProjectName": "PMWeb",
-  "ProjectGuid": "be5e227d-922b-4a44-b801-68783f7fe0f6",
+  "ProjectGuid": "06971ddc-a8b5-4331-b03c-ad97cfcdd57b",
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.PMWeb",
   "DisplayName": "PMWeb",
@@ -32,8 +32,8 @@
     "ID_CAP_WEBBROWSERCOMPONENT"
   ],
   "WP8Requirements": [],
-  "WP8PublisherID": "{2606b331-0830-47a3-ad9e-a997aae7c33c}",
-  "WP8ProductID": "{3a7c1e0d-79d1-421f-8962-df7c7752f24e}",
+  "WP8PublisherID": "{d7609eb5-4127-4f5a-9d2b-56256016a547}",
+  "WP8ProductID": "{a4d110a4-d638-472c-992e-38c2c2daaff8}",
   "WPSdk": "8.0",
   "WP8PackageIdentityName": "1234Telerik.PMWeb",
   "WP8WindowsPublisherName": "CN=Telerik",

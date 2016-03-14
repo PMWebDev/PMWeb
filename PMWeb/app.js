@@ -2,15 +2,19 @@
 
 (function() {
     var app = {
-        data: {}
-    };
+        data: {PMWebUrl:''
+              ,PMWebDbId:0
+              ,UserToken:''
+              
+              }
+        };
 
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
-                skin: 'flat',
-                initial: 'components/home/view.html'
+                skin: 'metro',
+                initial: 'components/Home/Home.html'
             });
         });
     };
@@ -20,7 +24,6 @@
             if (navigator && navigator.splashscreen) {
                 navigator.splashscreen.hide();
             }
-
             bootstrap();
         }, false);
     } else {
@@ -32,7 +35,12 @@
         $('#navigation-container li a.active').removeClass('active');
         currentItem.addClass('active');
     };
-
+	
+    app.AppendHeaderToView = function() {
+        var ViewsHeader = '<header data-role="header"><div data-role="navbar" style="background-color:#8ebc00"><a class="nav-button" data-align="left" data-role="backbutton" data-icon="arrow-e" style="color:#ffffff;background:#8ebc00"></a><span data-role="view-title" style="color:#ffffff"></span></div></header>'
+        $("#divViewsHeader").html(ViewsHeader);
+    };
+    
     window.app = app;
 
     app.isOnline = function() {
@@ -42,6 +50,20 @@
             return navigator.connection.type !== 'none';
         }
     };
+    
+    var argReturnToUrl = ''
+    app.openModalMessage = function(msg,returnToUrl){
+        argReturnToUrl = returnToUrl;
+      	$("#ModalMessage").html(msg);
+    	$("#MessageModalView").data("kendoMobileModalView").open();    
+    };
+    app.closeModalMessage = function(){
+    	$("#MessageModalView").data("kendoMobileModalView").close();
+        if (argReturnToUrl != ''){
+            app.mobileApp.navigate(argReturnToUrl);
+        }
+    };
+    
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp

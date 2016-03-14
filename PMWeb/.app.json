@@ -8,7 +8,7 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
-    }
+    } 
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
