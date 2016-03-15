@@ -9,7 +9,7 @@ app.Prelogin = kendo.observable({
 }); 
 
  function hplConnect_Click(e) {
-     /*new*/
+     /*new1*/ 
      /*nem*/
      if (PreLoginValidator.validate()) {
          var strUrl = $("#txtPMWebUrl").val();
